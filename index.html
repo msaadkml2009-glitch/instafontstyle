@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="robots" content="index, follow">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InstaFont Style - Design Stylish Social Media Text</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        sand: {
+                            50: '#FAF8F5',
+                            100: '#F3EDE2',
+                            200: '#E7DEC9',
+                            300: '#D5C5A7',
+                            400: '#C2AA83',
+                            500: '#A4865E',
+                            600: '#876A47',
+                            700: '#6A5135',
+                            800: '#503D28',
+                            900: '#382A1C',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Custom smooth scaling & sand-hover animation */
+        .btn-sand-hover {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: 1;
+        }
+        .btn-sand-hover::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: #E7DEC9; /* sand-200 */
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: -1;
+        }
+        .btn-sand-hover:hover::before {
+            left: 0;
+        }
+        .btn-sand-hover:hover {
+            color: #382A1C !important;
+            box-shadow: 0 10px 20px -10px rgba(164, 134, 94, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-800 font-sans antialiased">
+
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-stone-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <span class="text-2xl font-extrabold tracking-tight bg-gradient-to-r from-stone-900 via-sand-600 to-sand-500 bg-clip-text text-transparent">
+                    ✍️ InstaFont
+                </span>
+            </div>
+            <nav class="hidden md:flex items-center gap-8">
+                <a href="#features" class="text-sm font-medium text-stone-600 hover:text-stone-900 transition">Features</a>
+                <a href="#benefits" class="text-sm font-medium text-stone-600 hover:text-stone-900 transition">Benefits</a>
+                <a href="#categories" class="text-sm font-medium text-stone-600 hover:text-stone-900 transition">Categories</a>
+                <a href="#faqs" class="text-sm font-medium text-stone-600 hover:text-stone-900 transition">FAQs</a>
+            </nav>
+            <div>
+                <a href="#generator" class="btn-sand-hover inline-flex items-center justify-center px-5 py-2.5 bg-stone-950 text-white font-medium rounded-full text-sm">
+                    Generate Fonts
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative overflow-hidden py-20 lg:py-28 bg-gradient-to-b from-sand-50/50 to-transparent">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="grid lg:grid-cols-12 gap-12 items-center">
+                    <div class="lg:col-span-7 space-y-6 text-left">
+                        <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-sand-100 text-sand-800 border border-sand-200">
+                            ✨ New in Social Customization
+                        </span>
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-stone-900 tracking-tight leading-none">
+                            Transform Plain Text into <span class="bg-gradient-to-r from-sand-600 to-sand-400 bg-clip-text text-transparent">Something Extraordinary</span>
+                        </h1>
+                        <p class="text-lg text-stone-600 leading-relaxed max-w-2xl">
+                            Every social media profile tells a story. Stand out in a world where millions compete for attention. With 
+                            <a href="https://instafontstyle.in/" class="font-bold text-sand-600 hover:text-sand-800 underline decoration-sand-400 decoration-2 transition-all">InstaFont Style</a>, 
+                            you can convert simple words into beautiful Unicode styles instantly.
+                        </p>
+                        <div class="flex flex-wrap gap-4 pt-4">
+                            <a href="#generator" class="btn-sand-hover px-8 py-4 bg-stone-900 text-white font-semibold rounded-xl text-base shadow-lg shadow-stone-950/10">
+                                Get Started Free
+                            </a>
+                            <a href="#features" class="px-8 py-4 bg-white text-stone-800 font-semibold rounded-xl text-base border border-stone-200 hover:bg-stone-50 transition">
+                                Explore Features
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Visual Mockup (Interactive Generator Card) -->
+                    <div class="lg:col-span-5" id="generator">
+                        <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-xl shadow-stone-200/50 border border-stone-100 relative">
+                            <div class="absolute -top-3 -right-3 bg-sand-400 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">
+                                Live Simulator
+                            </div>
+                            <h3 class="text-lg font-bold text-stone-900 mb-4">Try it right now:</h3>
+                            <div class="space-y-4">
+                                <textarea id="textInput" placeholder="Type your text here..." class="w-full px-4 py-3 rounded-xl border border-stone-200 focus:outline-none focus:ring-2 focus:ring-sand-400 resize-none text-stone-800 bg-stone-50 h-24 transition"></textarea>
+                                <div class="space-y-2">
+                                    <div class="p-3 rounded-lg bg-stone-50 border border-stone-100 flex justify-between items-center group hover:border-sand-300 transition">
+                                        <span class="text-sm font-semibold text-stone-500">𝖡𝗈𝗅𝖽 𝖲𝗍𝗒𝗅𝖾</span>
+                                        <button class="text-xs font-medium text-sand-600 hover:text-sand-800 px-3 py-1 bg-white rounded border border-stone-200 hover:border-sand-300 transition">Copy</button>
+                                    </div>
+                                    <div class="p-3 rounded-lg bg-stone-50 border border-stone-100 flex justify-between items-center group hover:border-sand-300 transition">
+                                        <span class="text-sm font-semibold text-stone-500">𝓒𝓾𝓻𝓼𝓲𝓿𝓮 𝓢𝓽𝔂𝓵𝓮</span>
+                                        <button class="text-xs font-medium text-sand-600 hover:text-sand-800 px-3 py-1 bg-white rounded border border-stone-200 hover:border-sand-300 transition">Copy</button>
+                                    </div>
+                                    <div class="p-3 rounded-lg bg-stone-50 border border-stone-100 flex justify-between items-center group hover:border-sand-300 transition">
+                                        <span class="text-sm font-semibold text-stone-500">𝔊𝔬𝔱𝔥𝔦𝔠 𝔖𝔱𝔶𝔩𝔢</span>
+                                        <button class="text-xs font-medium text-sand-600 hover:text-sand-800 px-3 py-1 bg-white rounded border border-stone-200 hover:border-sand-300 transition">Copy</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trend and Simplification Section -->
+        <section id="features" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-stone-900 tracking-tight">The Trend of Stylish Typography</h2>
+                    <p class="text-lg text-stone-600">
+                        In digital branding, your typography choices dictate how users interact with your profile. Influencers, gamers, and modern brands are leveraging unique stylized characters to make an unforgettable first impression.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="p-8 rounded-2xl bg-stone-50 border border-stone-100 hover:shadow-lg hover:border-sand-200 transition-all duration-300">
+                        <div class="w-12 h-12 rounded-xl bg-sand-100 flex items-center justify-center text-xl mb-6 text-sand-700 font-bold">1</div>
+                        <h3 class="text-xl font-bold text-stone-900 mb-2">Input Your Content</h3>
+                        <p class="text-stone-600">Type or paste any plain text into the generator inside your web browser.</p>
+                    </div>
+                    <div class="p-8 rounded-2xl bg-stone-50 border border-stone-100 hover:shadow-lg hover:border-sand-200 transition-all duration-300">
+                        <div class="w-12 h-12 rounded-xl bg-sand-100 flex items-center justify-center text-xl mb-6 text-sand-700 font-bold">2</div>
+                        <h3 class="text-xl font-bold text-stone-900 mb-2">Preview & Choose</h3>
+                        <p class="text-stone-600">Instantly browse through hundreds of unique design options rendered in real-time.</p>
+                    </div>
+                    <div class="p-8 rounded-2xl bg-stone-50 border border-stone-100 hover:shadow-lg hover:border-sand-200 transition-all duration-300">
+                        <div class="w-12 h-12 rounded-xl bg-sand-100 flex items-center justify-center text-xl mb-6 text-sand-700 font-bold">3</div>
+                        <h3 class="text-xl font-bold text-stone-900 mb-2">Copy & Paste Anywhere</h3>
+                        <p class="text-stone-600">Copy the stylized text output with one click and paste it into any profile bio or caption.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Features Grid -->
+        <section class="py-20 bg-stone-50 border-t border-stone-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                    <span class="text-xs font-bold uppercase tracking-widest text-sand-600">Key Features</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-stone-900 tracking-tight">Fully Optimized For Modern Creators</h2>
+                </div>
+
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-white p-6 rounded-xl border border-stone-100 hover:border-sand-300 transition duration-300">
+                        <div class="text-2xl mb-4">⚡</div>
+                        <h4 class="font-bold text-stone-900 mb-2">Instant Font Preview</h4>
+                        <p class="text-sm text-stone-600">Compare dozens of creative Unicode options instantly while typing.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl border border-stone-100 hover:border-sand-300 transition duration-300">
+                        <div class="text-2xl mb-4">📚</div>
+                        <h4 class="font-bold text-stone-900 mb-2">Extensive Font Library</h4>
+                        <p class="text-sm text-stone-600">Everything from cursive, gothic, monospace, bubbles to tiny caps.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl border border-stone-100 hover:border-sand-300 transition duration-300">
+                        <div class="text-2xl mb-4">📦</div>
+                        <h4 class="font-bold text-stone-900 mb-2">Zero App Downloads</h4>
+                        <p class="text-sm text-stone-600">Works directly on browser windows without extensions or apps.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl border border-stone-100 hover:border-sand-300 transition duration-300">
+                        <div class="text-2xl mb-4">📱</div>
+                        <h4 class="font-bold text-stone-900 mb-2">Multi-Platform Ready</h4>
+                        <p class="text-sm text-stone-600">100% compatible with Instagram, Facebook, TikTok, and Discord.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits & Use Cases -->
+        <section id="benefits" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-12 gap-12 items-center">
+                    <div class="lg:col-span-5 space-y-6">
+                        <span class="text-xs font-bold uppercase tracking-widest text-sand-600">Who Benefits</span>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-stone-900 tracking-tight leading-tight">
+                            Build a Highly Personalized Identity Online
+                        </h2>
+                        <p class="text-stone-600 leading-relaxed">
+                            A creative typography palette allows content creators, artists, and small businesses to look highly professional. Gamers create memorable nicknames using 
+                            <a href="https://instafontstyle.in/boys-stylish-names.html" class="font-bold text-sand-600 hover:text-sand-800 underline decoration-sand-400 decoration-2 transition-all">InstaFont Style</a> 
+                            to help distinguish themselves from thousands of competitors on live streaming services.
+                        </p>
+                        <ul class="space-y-3">
+                            <li class="flex items-center gap-3 text-stone-700 font-medium">
+                                <span class="text-sand-500">✓</span> Highlighting bio information.
+                            </li>
+                            <li class="flex items-center gap-3 text-stone-700 font-medium">
+                                <span class="text-sand-500">✓</span> Catchy, easy-to-read headers on posts.
+                            </li>
+                            <li class="flex items-center gap-3 text-stone-700 font-medium">
+                                <span class="text-sand-500">✓</span> Elevating direct promotional sales posts.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="lg:col-span-7 grid sm:grid-cols-2 gap-6">
+                        <div class="p-6 rounded-xl bg-sand-50/50 border border-sand-100">
+                            <h4 class="font-bold text-stone-900 mb-2">Enhances Engagement</h4>
+                            <p class="text-stone-600 text-sm">Stand out visually on dense social media timelines to stop infinite scrolling.</p>
+                        </div>
+                        <div class="p-6 rounded-xl bg-sand-50/50 border border-sand-100">
+                            <h4 class="font-bold text-stone-900 mb-2">Saves Precious Time</h4>
+                            <p class="text-stone-600 text-sm">No editing software required. Generate and render complex styles instantly.</p>
+                        </div>
+                        <div class="p-6 rounded-xl bg-sand-50/50 border border-sand-100">
+                            <h4 class="font-bold text-stone-900 mb-2">Universal Compatibility</h4>
+                            <p class="text-stone-600 text-sm">Uses standard Unicode formatting supported by Android, iOS, and PC platforms.</p>
+                        </div>
+                        <div class="p-6 rounded-xl bg-sand-50/50 border border-sand-100">
+                            <h4 class="font-bold text-stone-900 mb-2">100% Free & Secure</h4>
+                            <p class="text-stone-600 text-sm">Enjoy zero subscriptions, hidden fees, or data-collection signups.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories & Platforms Table -->
+        <section id="categories" class="py-20 bg-stone-50 border-t border-b border-stone-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-stone-900 tracking-tight">Our Most Popular Font Categories</h2>
+                    <p class="text-stone-600">Choose custom fonts tailored perfectly to your digital brand's style guide.</p>
+                </div>
+
+                <div class="overflow-x-auto rounded-xl border border-stone-200 shadow-sm bg-white">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="bg-stone-50 border-b border-stone-200 text-stone-900 font-bold text-sm">
+                                <th class="p-4 sm:p-5">Category</th>
+                                <th class="p-4 sm:p-5">Visual Representation</th>
+                                <th class="p-4 sm:p-5">Best Platforms</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-stone-100 text-stone-700 text-sm">
+                            <tr class="hover:bg-sand-50/40 transition">
+                                <td class="p-4 sm:p-5 font-semibold text-stone-900">Cursive Style</td>
+                                <td class="p-4 sm:p-5 text-sand-700 italic">𝓘𝓷𝓼𝓽𝓪𝓕𝓸𝓷𝓽 𝓢𝓽𝔂𝓵𝓮</td>
+                                <td class="p-4 sm:p-5">Instagram Bios, Pinterest, Aesthetic Stories</td>
+                            </tr>
+                            <tr class="hover:bg-sand-50/40 transition">
+                                <td class="p-4 sm:p-5 font-semibold text-stone-900">Bold Serif</td>
+                                <td class="p-4 sm:p-5 font-bold">𝐈𝐧𝐬𝐭𝐚𝐅𝐨𝐧𝐭 𝐒𝐭𝐲𝐥𝐞</td>
+                                <td class="p-4 sm:p-5">X (Twitter), LinkedIn posts, Facebook headings</td>
+                            </tr>
+                            <tr class="hover:bg-sand-50/40 transition">
+                                <td class="p-4 sm:p-5 font-semibold text-stone-900">Gothic / Blackletter</td>
+                                <td class="p-4 sm:p-5 text-stone-800">𝔗𝔫𝔰𝔱𝔞𝔉𝔬𝔫𝔱 𝔖𝔱𝔶𝔩𝔢</td>
+                                <td class="p-4 sm:p-5">Discord, Gaming titles, TikTok overlays</td>
+                            </tr>
+                            <tr class="hover:bg-sand-50/40 transition">
+                                <td class="p-4 sm:p-5 font-semibold text-stone-900">Double-Struck</td>
+                                <td class="p-4 sm:p-5">𝕀𝕟𝕤𝕥𝕒𝔽𝕠𝕟𝕥 𝕊𝕥𝕪𝕝𝕖</td>
+                                <td class="p-4 sm:p-5">WhatsApp status, Telegram descriptions</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pros & Cons Grid -->
+        <section class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div class="space-y-6">
+                        <h3 class="text-2xl font-bold text-stone-900 flex items-center gap-2">
+                            <span class="text-green-600">✓</span> The Advantages
+                        </h3>
+                        <div class="space-y-4">
+                            <div class="flex gap-4 p-4 rounded-xl bg-stone-50 border border-stone-100">
+                                <span class="font-bold text-green-600">✓</span>
+                                <p class="text-stone-600 text-sm">Completely beginner friendly with instant copy-and-paste controls.</p>
+                            </div>
+                            <div class="flex gap-4 p-4 rounded-xl bg-stone-50 border border-stone-100">
+                                <span class="font-bold text-green-600">✓</span>
+                                <p class="text-stone-600 text-sm">Perfect for establishing distinct identity formatting for businesses.</p>
+                            </div>
+                            <div class="flex gap-4 p-4 rounded-xl bg-stone-50 border border-stone-100">
+                                <span class="font-bold text-green-600">✓</span>
+                                <p class="text-stone-600 text-sm">Zero installation footprint—runs on fast and lightweight cloud-based servers.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y-6">
+                        <h3 class="text-2xl font-bold text-stone-900 flex items-center gap-2">
+                            <span class="text-stone-400">⚠️</span> Things to Consider
+                        </h3>
+                        <div class="space-y-4">
+                            <div class="flex gap-4 p-4 rounded-xl bg-stone-50 border border-stone-100">
+                                <span class="font-bold text-stone-400">⚠️</span>
+                                <p class="text-stone-600 text-sm">Over-styling text heavily might impact screen readers and general accessibility.</p>
+                            </div>
+                            <div class="flex gap-4 p-4 rounded-xl bg-stone-50 border border-stone-100">
+                                <span class="font-bold text-stone-400">⚠️</span>
+                                <p class="text-stone-600 text-sm">Older smart devices could occasionally struggle rendering specific Unicode symbols.</p>
+                            </div>
+                            <div class="flex gap-4 p-4 rounded-xl bg-stone-50 border border-stone-100">
+                                <span class="font-bold text-stone-400">⚠️</span>
+                                <p class="text-stone-600 text-sm">We advise keeping body paragraphs standard for reliable user readability.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive FAQs Accordion -->
+        <section id="faqs" class="py-20 bg-stone-50 border-t border-stone-100">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+                    <h2 class="text-3xl font-extrabold text-stone-900 tracking-tight">Frequently Asked Questions</h2>
+                    <p class="text-stone-600">Everything you need to understand about decorative Unicode typography styling.</p>
+                </div>
+
+                <div class="space-y-4">
+                    <!-- FAQ Item 1 -->
+                    <details class="group bg-white p-6 rounded-2xl border border-stone-200/60 shadow-sm [&_summary::-webkit-details-marker]:hidden" open>
+                        <summary class="flex items-center justify-between cursor-pointer focus:outline-none">
+                            <h3 class="font-bold text-stone-900 text-lg transition duration-200 group-hover:text-sand-600">What is InstaFont Style?</h3>
+                            <span class="ml-1.5 flex-shrink-0 rounded-full bg-stone-100 p-1.5 text-stone-900 transition duration-300 group-open:-rotate-180">
+                                🔽
+                            </span>
+                        </summary>
+                        <p class="mt-4 text-stone-600 leading-relaxed text-sm">
+                            It is an online cloud-based tool engineered to instantly translate your standard lettering inputs into beautiful, stylized alternative formats using Unicode blocks.
+                        </p>
+                    </details>
+
+                    <!-- FAQ Item 2 -->
+                    <details class="group bg-white p-6 rounded-2xl border border-stone-200/60 shadow-sm [&_summary::-webkit-details-marker]:hidden">
+                        <summary class="flex items-center justify-between cursor-pointer focus:outline-none">
+                            <h3 class="font-bold text-stone-900 text-lg transition duration-200 group-hover:text-sand-600">Is InstaFont Style free to use?</h3>
+                            <span class="ml-1.5 flex-shrink-0 rounded-full bg-stone-100 p-1.5 text-stone-900 transition duration-300 group-open:-rotate-180">
+                                🔽
+                            </span>
+                        </summary>
+                        <p class="mt-4 text-stone-600 leading-relaxed text-sm">
+                            Yes! Our web application features fully unlimited styling features completely free of charges, account signups, or premium paywall popups.
+                        </p>
+                    </details>
+
+                    <!-- FAQ Item 3 -->
+                    <details class="group bg-white p-6 rounded-2xl border border-stone-200/60 shadow-sm [&_summary::-webkit-details-marker]:hidden">
+                        <summary class="flex items-center justify-between cursor-pointer focus:outline-none">
+                            <h3 class="font-bold text-stone-900 text-lg transition duration-200 group-hover:text-sand-600">Can I use these fonts on Instagram?</h3>
+                            <span class="ml-1.5 flex-shrink-0 rounded-full bg-stone-100 p-1.5 text-stone-900 transition duration-300 group-open:-rotate-180">
+                                🔽
+                            </span>
+                        </summary>
+                        <p class="mt-4 text-stone-600 leading-relaxed text-sm">
+                            Absolutely. The converted output is perfect for bio sections, stories, display titles, highlights, captions, and comments.
+                        </p>
+                    </details>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-stone-900 text-stone-400 py-16 border-t border-stone-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div class="space-y-4">
+                    <span class="text-xl font-extrabold text-white">✍️ InstaFont</span>
+                    <p class="text-sm text-stone-500 leading-relaxed">
+                        Helping modern content creators build beautiful, custom, and highly recognizable identities online through creative font stylizations.
+                    </p>
+                </div>
+                <div>
+                    <h5 class="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Explore</h5>
+                    <ul class="space-y-2.5 text-sm">
+                        <li><a href="#features" class="hover:text-sand-300 transition">Our Process</a></li>
+                        <li><a href="#benefits" class="hover:text-sand-300 transition">User Benefits</a></li>
+                        <li><a href="#categories" class="hover:text-sand-300 transition">Our Categories</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Social Links</h5>
+                    <ul class="space-y-2.5 text-sm">
+                        <li><a href="#" class="hover:text-sand-300 transition">Instagram</a></li>
+                        <li><a href="#" class="hover:text-sand-300 transition">TikTok</a></li>
+                        <li><a href="#" class="hover:text-sand-300 transition">Facebook</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Security</h5>
+                    <ul class="space-y-2.5 text-sm">
+                        <li><a href="#" class="hover:text-sand-300 transition">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-sand-300 transition">Terms of Use</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-stone-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
+                <p>&copy; 2026 InstaFont Style. All rights reserved globally.</p>
+                <p>Built for digital customization enthusiasts.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
